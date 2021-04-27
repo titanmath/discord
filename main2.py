@@ -160,4 +160,4 @@ async def addrole_error(ctx, error):
     await ctx.send(embed=em)
 
 
-client.run("ODM2NzEzMTg0ODQwNzc3NzI4.YIh_4A.aFVHLXrqAB87ljqzLIB3gsBNOww")
+client.run("ODM2NzEzMTg0ODQwNzc3NzI4.YIh_4A.aFVHLssXrqAB87ljqzLIB3gsBNOww")
