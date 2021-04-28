@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import json
+from boto.s3.connection import S3Connection
 
 client = commands.Bot(command_prefix="!")
 
@@ -159,5 +160,5 @@ async def addrole_error(ctx, error):
                        description="Error", color=0x5a6b7e)
     await ctx.send(embed=em)
 
-
-client.run("ODM2NzEzMTg0ODQwNzc3NzI4.YIh_4A.aFVHLssXrqAB87ljqzLIB3gsBNOww")
+token = S3Connection(os.environ['TOKEN'])
+client.run(token)
