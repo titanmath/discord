@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import json
+import os
 from boto.s3.connection import S3Connection
 
 client = commands.Bot(command_prefix="!")
